@@ -14,8 +14,8 @@ pub fn set(profile: Profile, max_percent: u8) {
             }
         } else {
             match profile {
-                Profile::Battery => "conservative",
-                Profile::Balanced => "schedutil",
+                Profile::Battery => "powersave",
+                Profile::Balanced => "ondemand",
                 Profile::Performance => "performance",
             }
         };
